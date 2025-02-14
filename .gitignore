@@ -361,3 +361,24 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# User-specific files
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pdb
+*.mdb
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Other
+*.DS_Store
+*.bak
+*.tmp
+*.temp
