@@ -1,0 +1,8 @@
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.AssemblyInfoInputs.cache
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.AssemblyInfo.cs
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.csproj.CoreCompileInputs.cache
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.RazorAssemblyInfo.cache
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.RazorAssemblyInfo.cs
+C:\Users\sewar\Desktop\Fitness Center Management\Fitness Center Management\FitnessLife\obj\Debug\net6.0\FitnessLife.csproj.AssemblyReference.cache

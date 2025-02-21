@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+@model FitnessLife.Models.User
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Regiseration and LogIn
+		</title>
+	<link rel="shortcut icon" type="image/x-icon" href="~/HomeDesign/assets/img/favicon.ico">
+
+	<style>
+		.login-box {
+			background-image: url('@Url.Content("~/HomeDesign/assets/img/gallery/gallery1.png")');}
+		select .input, select.input option{
+		
+			color: black;}
+		
+		}
+	</style>
+	<link rel="stylesheet" href="~/RegisterAndLoginDesign/css/registerandlogin.css">
+
+	</head>
+	<body>
+<div class="row">
+	<div class="col-md-6 mx-auto p-0">
+		<div class="card">
+			<div class="login-box">
+				<div class="login-snip">
+					<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+					<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+					<div class="login-space">
+							<div class="login">
+							<div class="group">
+								<label asp-for="Username" for="user" class="label">Username</label>
+								<input asp-for="Username" id="user" type="text" class="input" placeholder="Enter your username">
+							</div>
+							<div class="group">
+								<label asp-for="Password" for="pass" class="label">Password</label>
+								<input asp-for="Password" id="pass" type="password" class="input" data-type="password" placeholder="Enter your password">
+							</div>
+							<div class="group">
+								<input  id="check" type="checkbox" class="check" checked>
+								<label for="check"><span class="icon"></span> Keep me Signed in</label>
+							</div>
+								<div class="group">
+									<form asp-controller="Home" asp-action="Index" method="post">
+										<input type="submit" class="button" value="Sign In">
+									</form>
+								</div>
+
+							<div class="hr"></div>
+							<div class="foot">
+								<a href="#">Forgot Password?</a>
+							</div>
+						</div>
+							<div class="sign-up-form">
+								<div class="group">
+									<label asp-for="Fname" for="user" class="label">First Name</label>
+									<input asp-for="Fname" id="user" type="text" class="input" placeholder="Enter First Name">
+								</div>
+								<div class="group">
+									<label asp-for="Lname" for="user" class="label">Last Name</label>
+									<input asp-for="Lname" id="user" type="text" class="input" placeholder="Enter Last Name">
+								</div>
+							<div class="group">
+									<label asp-for="Username" for="user" class="label">Username</label>
+									<input asp-for="Username" id="user" type="text" class="input" placeholder="Create your Username">
+							</div>
+							<div class="group">
+								<label asp-for="Password" class="label">Password</label>
+								<input asp-for="Password" id="pass" type="password" class="input" data-type="password" placeholder="Create your password">
+							</div>
+							<div class="group">
+								<label asp-for="BirthDate" for="pass" class="label">Date of Birth</label>
+									<input asp-for="BirthDate" id="pass" type="date" class="input" data-type="date" placeholder="date of birth">
+							</div>
+							<div class="group">
+								<label asp-for="Email" for="pass" class="label">Email Address</label>
+									<input asp-for="Email" id="pass" type="email" class="input" placeholder="Enter your email address">
+							</div>
+							<div class="group">
+								<label for="pass" class="label">Gender: </label>
+									<label asp-for="Gender" class="radio-container l-r-55">
+										<input asp-for="Gender" value="female" type="radio" checked="checked" name="gender">
+										Female
+										<span class="checkmark"></span>
+									</label>
+									<label asp-for="Gender" class="radio-container">
+										<input asp-for="Gender" type="radio" value="male" name="gender">
+										Male
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="group">
+									<label for="Role" class="label">Are you a Trainer or Member?</label>
+									<select asp-for="Role" class="form-control">
+										<option value="2">Trainer</option>
+										<option value="3">Member</option>
+									</select>
+								</div>
+								<div class="group">
+									<button type="submit" class="button" onclick="document.getElementById('tab-1').checked = true;">Sign In</button>
+								</div>
+							<div class="hr"></div>
+							<div class="foot">
+								<label for="tab-1">Already Member?</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script>
+		// Get the 'tab' query parameter from the URL
+		const urlParams = new URLSearchParams(window.location.search);
+		const tab = urlParams.get('tab');
+
+		// If the "tab" parameter is "signup", switch to the Sign Up tab
+		if (tab === 'signup') {
+			document.getElementById('tab-2').checked = true; // Activate Sign Up tab
+		}
+	</script>
+</body>
+
+</html>
+<!-- end document-->
