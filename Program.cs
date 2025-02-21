@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IDbContext, DbContext>();
 builder.Services.AddScoped<ICourseRepository, ICourseRepository>();
 builder.Services.AddScoped<ICourseService, CourseService>();
-var app = builder.Build();
+var app = builder.Build(); 
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
