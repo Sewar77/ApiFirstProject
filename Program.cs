@@ -1,5 +1,8 @@
 using ApiProject.Core.Common;
+using ApiProject.Core.Repository;
+using ApiProject.Core.Service;
 using ApiProject.Infra.Common;
+using ApiProject.Infra.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IDbContext, DbContext>();
+builder.Services.AddScoped<ICourseRepository, ICourseRepository>();
+builder.Services.AddScoped<ICourseService, CourseService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
